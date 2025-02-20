@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container text-center my-5">
+        <h1>Welcome to My Personal Website</h1>
+        <img src="images/profile.png" alt="Profile Image" class="rounded-circle" width="200">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student at NDSU with a strong passion for cybersecurity. I am also a dedicated AFROTC cadet, striving to grow my leadership skills and prepare for a future career in the military. Outside of my academic and military commitments, I am highly interested in strength training. I having spent over three years learning about muscle growth and exercise science.</p>
+        
+        <h3>Hobbies</h3>
+        <ol>
+            <li>Weightlifting</li>
+            <li>Cybersecurity</li>
+            <li>Programming and Software Development</li>
+            <li>Reading mechanical and Technology liturature</li>
+            <li>Strategy-Based games</li>
+        </ol>
+        
+        <h3>Skills & Expertise</h3>
+        <ul>
+            <li>Cybersecurity (Ethical Hacking)</li>
+            <li>Software Development (C++)</li>
+            <li>Leadership and Teamwork (Military Training)</li>
+            <li>Fitness and Strength Training (3+ Years of Experience)</li>
+        </ul>        
+    </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="container my-5">
+    <h2>Portfolio</h2>
+
+    <!-- Bootstrap Image Carousel -->
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/project1.jpeg" class="d-block w-100" alt="Project 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/project2.jpeg" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/project3.jpeg" class="d-block w-100" alt="Project 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+
+    <!-- Weekly Schedule -->
+    <section class="container my-5">
+        <h2>Weekly Schedule</h2>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Work</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Work</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Work</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Work</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Work</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <h2>Contact Me</h2>
+
+    <!-- Bootstrap Success Alert (Initially Hidden) -->
+    <div class="alert alert-success d-none" id="contactAlert" role="alert">
+        Thank you! Your message has been sent successfully.
+    </div>
+
+    <form id="contactForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2024 My Personal Website, yippee</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("contactAlert").classList.remove("d-none");
+        });
+    </script>
+    
+</body>
+</html>
+
